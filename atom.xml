@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://black-spree.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-03-27T01:30:10.865Z</updated>
+    <title>BlackSpree</title>
+    <updated>2020-03-27T02:25:35.642Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://black-spree.github.io"/>
     <link rel="self" href="https://black-spree.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>愈挫愈勇</subtitle>
     <logo>https://black-spree.github.io/images/avatar.png</logo>
     <icon>https://black-spree.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, BlackSpree</rights>
     <entry>
         <title type="html"><![CDATA[Test]]></title>
         <id>https://black-spree.github.io/post/test/</id>

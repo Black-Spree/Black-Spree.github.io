@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://black-spree.github.io</id>
     <title>BlackSpree</title>
-    <updated>2020-03-27T02:56:45.734Z</updated>
+    <updated>2020-03-27T02:58:20.072Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://black-spree.github.io"/>
     <link rel="self" href="https://black-spree.github.io/atom.xml"/>
@@ -10,15 +10,6 @@
     <logo>https://black-spree.github.io/images/avatar.png</logo>
     <icon>https://black-spree.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, BlackSpree</rights>
-    <entry>
-        <title type="html"><![CDATA[Test]]></title>
-        <id>https://black-spree.github.io/post/test/</id>
-        <link href="https://black-spree.github.io/post/test/">
-        </link>
-        <updated>2020-03-27T01:29:50.000Z</updated>
-        <content type="html"><![CDATA[<p>Test</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://black-spree.github.io/post/hello-gridea/</id>

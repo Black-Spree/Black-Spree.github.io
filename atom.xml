@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://black-spree.github.io</id>
     <title>BlackSpree</title>
-    <updated>2020-03-29T16:17:49.365Z</updated>
+    <updated>2020-03-30T07:27:55.866Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://black-spree.github.io"/>
     <link rel="self" href="https://black-spree.github.io/atom.xml"/>
@@ -11,12 +11,45 @@
     <icon>https://black-spree.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, BlackSpree</rights>
     <entry>
-        <title type="html"><![CDATA[丰富的模型库]]></title>
+        <title type="html"><![CDATA[如何免费获取丰富的模型库]]></title>
         <id>https://black-spree.github.io/post/feng-fu-de-mo-xing-ku/</id>
         <link href="https://black-spree.github.io/post/feng-fu-de-mo-xing-ku/">
         </link>
         <updated>2020-03-29T16:16:25.000Z</updated>
-        <content type="html"><![CDATA[<p>待定</p>
+        <content type="html"><![CDATA[<blockquote>
+<h1 id="font-color-red注意font"><font color = "red">注意！</font></h1>
+<h2 id="当你使用此方法获取模型你要承担应有的风险-如">当你使用此方法获取模型你要承担应有的风险 如</h2>
+<blockquote>
+<p>不能将模型用于商用<br>
+承担版权责任</p>
+</blockquote>
+<h2 id="参考文章">参考文章:</h2>
+<p>1.<a href="https://imjad.cn/archives/lab/ripping-sketchfab-models/">破解Sketchfab加密并提取模型数据</a><br>
+2.<a href="https://www.agancg.cn/478/">【技巧学习】如何免费下载和提取Sketchfab的模型</a></p>
+</blockquote>
+<h1 id="准备">准备</h1>
+<h2 id="1安装python环境">1.安装Python环境</h2>
+<p>网上有许多此类教程 在此不多赘述<br>
+传送门 <a href="https://www.runoob.com/python3/python3-install.html">菜鸟Python教程--Python3 环境搭建</a></p>
+<h2 id="2安装python包">2.安装Python包</h2>
+<p>因为下载脚本中用到了其他包 所以我们需要给Python环境安装这些包<br>
+1.Requests包<br>
+<a href="https://www.cnblogs.com/mmzs/p/8358765.html">博客园传送门</a><br>
+2.Bs4包<br>
+<a href="https://blog.csdn.net/Bibabu135766/article/details/81662981">CSDN传送门</a></p>
+<h2 id="3下载所需脚本">3.下载所需脚本</h2>
+<p>1.下载脚本<br>
+2.解包脚本&amp;Blender<br>
+<a href="http://cdn.agancg.cn/Sketchfab.7z">下载地址</a></p>
+<h1 id="下载模型">下载模型</h1>
+<p>运行Sketchfab_Download_Python_Script.exe<br>
+当出现 InputUrl:时便可以输入网址 相关文件会被下载到程序根目录与模型同名的文件夹</p>
+<h1 id="解包模型">解包模型</h1>
+<p>模型数据在后缀名为osgjs的文件中<br>
+开启下载的Blender 运行脚本 导入此文件便能解包模型网格数据</p>
+<h1 id="备份">备份</h1>
+<p>针对上述参考文章会有备份 备份代码如下:<br>
+待定</p>
 ]]></content>
     </entry>
     <entry>

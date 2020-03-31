@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://black-spree.github.io/favicon.ico?v=1585553676733">
+<link rel="shortcut icon" href="https://black-spree.github.io/favicon.ico?v=1585614503082">
 <link rel="stylesheet" href="https://black-spree.github.io/styles/main.css">
 
 
@@ -18,6 +18,7 @@
 
 
 
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta name="description" content="👏  欢迎使用 Gridea ！
 ✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
 
@@ -35,7 +36,7 @@ Gridea 主页
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://black-spree.github.io">
-        <img src="https://black-spree.github.io/images/avatar.png?v=1585553676733" class="site-logo">
+        <img src="https://black-spree.github.io/images/avatar.png?v=1585614503082" class="site-logo">
         <h1 class="site-title">BlackSpree</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -154,6 +155,15 @@ Gridea 主页
 
           </div>
 
+          <div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'K9DaHotTtDx97glMUjyEhpfm-gzGzoHsz',
+            appKey: 'OvgIi0Yj5h8BOWcky2XEDPer'
+        })
+    </script>
+          
         </div>
       </div>
     </div>
@@ -182,5 +192,7 @@ var app = new Vue({
 
 
 
+
+    
   </body>
 </html>

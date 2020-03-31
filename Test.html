@@ -2,12 +2,18 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>测试页面</title>
+		<title>留言板</title>
+		<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 		
 	</head>
 	<body>
-		<h1 style="color : red">如你所见 这就是一个测试页面</h1>
-		<p>你觉得你能在这找到什么?</p>
-		<!--这里真的什么都没有 真的-->
+		<div id="vcomments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'K9DaHotTtDx97glMUjyEhpfm-gzGzoHsz',
+            appKey: 'OvgIi0Yj5h8BOWcky2XEDPer'
+        })
+    </script>
 	</body>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>关于 | BlackSpree</title>
+<title>显示接口实现 | BlackSpree</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -19,18 +19,15 @@
 
 
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
+    <meta name="description" content="C#里的接口的实现方式有两种。分别是显示实现与隐式实现，平常常用隐式，在此记录一下显示实现。
+本文不确保正确
 
-🏠 关于本站
-通过Gridea与GitHub建立
-👨‍💻 博主是谁
-BlackSpree
-⛹ 兴趣爱好
-玩
-📬 联系我呀
-请访问我的B站页面
-..." />
+环境
+
+首先我们先定义一个接口 下文的代码默认包含此接口的定义
+interface ITestInterface
+{
+void ..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -117,24 +114,79 @@ BlackSpree
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">关于</h2>
-            <div class="post-date">2019-01-25</div>
+            <h2 class="post-title">显示接口实现</h2>
+            <div class="post-date">2020-04-03</div>
+            
+              <div class="feature-container" style="background-image: url('https://black-spree.github.io/post-images/xian-shi-jie-kou-shi-xian.png')">
+              </div>
             
             <div class="post-content" v-pre>
-              <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+              <p>C#里的接口的实现方式有两种。分别是显示实现与隐式实现，平常常用隐式，在此记录一下显示实现。<br>
+<font color=red>本文不确保正确</font></p>
+<!-- more -->
+<h1 id="环境">环境</h1>
+<blockquote>
+<p>首先我们先定义一个接口 下文的代码默认包含此接口的定义</p>
+<pre><code>interface ITestInterface
+{
+void Test1()=&gt;Conwole.WriteLine(&quot;默认显示实现&quot;);
+void Test2();
+}
+</code></pre>
 </blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>通过Gridea与GitHub建立</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>BlackSpree</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>玩</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>请访问我的B站页面</p>
+<h1 id="隐式接口实现">隐式接口实现</h1>
+<blockquote>
+<p>首先我们先看看接口的隐式实现</p>
+<pre><code>class Test:ITestInterface
+{
+  public void Test2() =&gt; Conwole.WriteLine(&quot;隐式实现&quot;);
+}
+</code></pre>
+<p>调用时</p>
+<pre><code>Test t = new Test();
+t.Test2();
+</code></pre>
+<p>输出结果为    隐式实现<br>
+#显示接口实现<br>
+接下来是接口的显示实现</p>
+<h2 id="默认实现">默认实现</h2>
+<blockquote>
+<p>显示实现允许接口对方法进行默认实现</p>
+<pre><code> class Test:ITestInterface
+{
+}
+//直接调用
+ITestInterface test = new Test();
+test.Test();
+</code></pre>
+<p>输出结果为 显示实现</p>
+</blockquote>
+<h2 id="重写实现">重写实现</h2>
+<blockquote>
+<p>显示实现允许接口对方法进行默认实现</p>
+<pre><code> class Test:ITestInterface
+{
+ public  ITestInterface.Test()=&gt;Console.WriteLine(&quot;重写显示实现&quot;);
+}
+//直接调用
+ITestInterface test = new Test();
+test.Test();
+</code></pre>
+<p>输出结果为 重写显示实现</p>
+</blockquote>
+</blockquote>
 
             </div>
             
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://black-spree.github.io/post/feng-fu-de-mo-xing-ku/">
+                  <h3 class="post-title">
+                    如何免费获取丰富的模型库
+                  </h3>
+                </a>
+              </div>
             
 
             

@@ -11,6 +11,7 @@
       padding: 0;
     }
     body {
+      background-color: rgb(24, 24, 24);
       display: flex;
       flex-direction: column;
       height: 100vh;
@@ -24,13 +25,13 @@
     }
     .number {
       font-size: 80px;
-      color: #666;
+      color: rgb(163, 1, 1);
       font-weight: bold;
     }
     .text {
       font-size: 14px;
       margin: 24px;
-      color: #333;
+      color: rgb(207, 207, 207);
     }
     .btn-container {
       display: flex;
@@ -52,7 +53,7 @@
     .footer {
       padding: 16px;
       border-top: 1px solid #efefef;
-      color: #777;
+      color: rgb(224, 224, 224);
       font-weight: lighter;
     }
     .footer a {
@@ -66,7 +67,7 @@
   <div class="box">
     <div class="number">4 0 4</div>
     <div class="text">
-      Page not found
+      你不该到这来
     </div>
     <div class="btn-container">
       <a class="btn" id="back">
@@ -74,12 +75,12 @@
           <path fill="none" d="M0 0h24v24H0z"/>
           <path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/>
         </svg>
-        Back
+        返回
       </a>
     </div>
   </div>
   <footer class="footer">
-    Powered by <a href="https://gridea.dev" target="_blank">Gridea</a>
+    由<a href="https://gridea.dev" target="_blank" style="color: rgb(236, 236, 236);">Gridea</a>提供
   </footer>
   <script>
     var back = document.getElementById('back')

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>BlackSpree</title>
+<title>自动检索目录下cs文件并生成树形md文件 | BlackSpree</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,11 +18,14 @@
 
 
 
-    <meta name="description" content="愈挫愈勇">
-    
+    <meta name="description" content="使用C#程序自动检索目标目录下cs文件结构并生成MD文件来构建思维导图
+源码仓库与程序下载可见:https://suspectedport.coding.net/public/GetProjectStruct/Core/git/files
+..." />
+    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
+
       <div class="sidebar" :class="{ 'full-height': menuVisible }">
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
@@ -95,37 +98,33 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="http://0xyp24.coding-pages.com/post/apply-boolean-pro/">
-                  <h2 class="post-title">Apply Boolean Pro</h2>
-                </a>
-                <div class="post-date">
-                  2020-07-09
-                </div>
-                <div class="post-abstract">
-                  <p>用于解决Blender中应用Boolean所造成的着色错误</p>
+          <div class="post-detail">
+            <h2 class="post-title">自动检索目录下cs文件并生成树形md文件</h2>
+            <div class="post-date">2020-11-07</div>
+            
+            <div class="post-content" v-pre>
+              <p>使用C#程序自动检索目标目录下cs文件结构并生成MD文件来构建思维导图<br>
+源码仓库与程序下载可见:https://suspectedport.coding.net/public/GetProjectStruct/Core/git/files</p>
+<!-- more -->
+<p>近日在学习SteamVR Unity Plugin<br>
+不得不说V社做的插件是真的大,使人眼花缭乱根本无从下手。<br>
+学习期间看到有个CSDN的网友的帖子,它使用了思维导图的形式分析了整个插件的目录,使得思路一目了然<br>
+于是我也决心要画个思维导图,但是我好吃懒做,并不想把脚本名称一个个抄到Xmind中,于是便写了这个程序生成一个MarkDown文件,导入Xmind就可以自动生成了。虽然会生成一些无效的结构,但是工作量少了不是一点半点的啊。<br>
+使用方法很简单,将要生成的目录路径粘贴到窗户口并回车,就能得到md数据了<br>
+最后放一下自动生成的SteamVR Unity Plugin的(所在项目)结构的思维导图</p>
 
-                </div>
-              </div>
-              
-                <a class="right" href="http://0xyp24.coding-pages.com/post/apply-boolean-pro/">
-                  <div class="feature-container" style="background-image: url('http://0xyp24.coding-pages.com/post-images/apply-boolean-pro.jpg')">
-                  </div>
-                </a>
-              
-            </article>
-          
+            </div>
+            
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+
+          </div>
 
         </div>
       </div>
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
 
@@ -150,7 +149,5 @@ var app = new Vue({
 
 
 
-    
   </body>
-  
 </html>
